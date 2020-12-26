@@ -1,8 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faInstagram,
+  faLinkedinIn,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-Vue.config.productionTip = false
+library.add(faInstagram, faLinkedinIn, faGithub, faFileAlt);
+
+Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
