@@ -47,28 +47,27 @@ export default {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-    background-color: #fff;
-    width: 16px;
-}
-
-/* background of the scrollbar except button or resizer */
-body::-webkit-scrollbar-track {
-    background-color: #fff;
-}
-
-/* scrollbar itself */
-body::-webkit-scrollbar-thumb {
-    background-color: #babac0;
-    border-radius: 16px;
-    border: 4px solid #fff;
-}
-
-/* set button(top and bottom of the scrollbar) */
-body::-webkit-scrollbar-button {
-    display:none;
+body {
+  overflow: overlay;
 }
 li,ul,p,h1,h2,h3,h4{
   margin:0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 90, 90);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-track:hover {
+  background: rgba(0,0,0,0.2);
 }
 </style>
