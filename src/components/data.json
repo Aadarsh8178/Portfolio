@@ -1,0 +1,22 @@
+{
+  "companies":[
+    {
+      "name":"Exxat Systems",
+      "desc":"Working with angular",
+      "link":"https://exxat.com/",
+      "logo":""
+    },
+    {
+      "name":"Zedblox",
+      "desc":"Integrated map services from google and mapbox ,made style component based SVG structure.Worked With React , Redux , Bootstrap , MaterialUI ,Google Maps ,Mapbox ,Styled Component",
+      "link":"https://zedblox.com/",
+      "logo":""
+    },
+    {
+      "name":"Casa Melhor",
+      "desc":"Implemented Vuejs app with dynamic page flow controlled from backend. Utilised Vue-router,axios and made generic components. Made an iframe based customizable widget",
+      "link":"https://www.casamelhor.in",
+      "logo":""
+    }
+  ]
+}

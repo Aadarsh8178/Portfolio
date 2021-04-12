@@ -72,6 +72,7 @@ export default {
 <style scoped>
 .home_wrapper{
   min-height: 100vh;
+  min-width:100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,15 +82,11 @@ export default {
   perspective: 700px;
 }
 .video{
+ position: fixed;
+  right: 0;
+  bottom: 0;
   min-width: 100%; 
-  min-height: 100%; 
-  height:auto;
-  width:auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-60%,-50%);
-  z-index:0;
+  min-height: 100%;
 }
 .glass_container{
   width:45rem;
@@ -102,7 +99,8 @@ export default {
 .glass{
   z-index:1;
   width:40rem;
-  min-height: 48vh;
+  max-height: 400px;
+  height: 48vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,7 +109,7 @@ export default {
   padding:3em;
   border-radius: 1em;
   position:relative;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
   background-clip:padding-box;
   box-shadow: 10px 10px 10px rgba(191, 200, 216, 0.06);
   transform-style: preserve-3d;
