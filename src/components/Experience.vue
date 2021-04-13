@@ -44,9 +44,10 @@
 </template>
 
 <script>
-import { TimelineMax, Back,gsap,CSSRulePlugin } from "gsap/all";
+import { TimelineMax, Back } from "gsap/dist/gsap"
+import { CSSRulePlugin } from "gsap/all";
 
-gsap.registerPlugin(CSSRulePlugin);
+// gsap.registerPlugin(CSSRulePlugin);
 
 export default {
   data() {
