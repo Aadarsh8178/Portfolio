@@ -3,6 +3,7 @@
     <app-navbar></app-navbar>
     <app-home></app-home>  
     <app-experience></app-experience> 
+    <app-my-work></app-my-work>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Navbar from './components/DesNavbar.vue';
 import Home from './components/Home.vue';
 import Experience from './components/Experience.vue';
+import MyWork from './components/MyWork.vue';
 
 export default {
   components:{
     appNavbar:Navbar,
     appHome:Home,
-    appExperience:Experience
+    appExperience:Experience,
+    appMyWork:MyWork
   },
   data(){
     return {
@@ -69,5 +72,27 @@ li,ul,p,h1,h2,h3,h4{
 }
 ::-webkit-scrollbar-track:hover {
   background: rgba(0,0,0,0.2);
+}
+.mycontainer {
+  width:90%;
+  max-width: 1200px;
+}
+.pt-5{
+  padding-top: 2.5rem;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.center-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.peach{
+  color: #F8CEEC;
 }
 </style>

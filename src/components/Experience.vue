@@ -1,10 +1,11 @@
 <template>
   <div class="exp_wrapper">
-    <h1 class="title">Experience</h1>
+    <h1 class="mycontainer" style="margin:auto">Experience</h1>
     <div
       class="exp_card0"
       @mouseenter="animations[0].play()"
       @mouseleave="animations[0].reverse()"
+      @click="openSite('https://zedblox.com/')"
     >
       <h1>ZedBlox Logitech</h1>
       <p>
@@ -17,6 +18,7 @@
       class="exp_card1"
       @mouseenter="animations[1].play()"
       @mouseleave="animations[1].reverse()"
+      @click="openSite('https://www.casamelhor.in')"
     >
       <h1>Casa Melhor</h1>
       <p>
@@ -52,6 +54,11 @@ export default {
     return {
       animations: [],
     };
+  },
+  methods:{
+    openSite(link) {
+      window.open(link)
+    }
   },
   mounted() {
     for (let i = 0; i < 3; i++) {
@@ -100,9 +107,6 @@ export default {
 </script>
 
 <style>
-.title{
-  margin-left:2rem;
-}
 .exp_wrapper {
   min-height: 100vh;
   position: relative;

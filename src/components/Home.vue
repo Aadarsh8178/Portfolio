@@ -2,7 +2,7 @@
   <div class="home_wrapper">
     <video
       class="video"
-     src="../assets/darkback.webm" loop autoplay muted></video>
+     src="https://firebasestorage.googleapis.com/v0/b/portfolio-b6252.appspot.com/o/videoplayback%20(online-video-cutter.com).webm?alt=media&token=8061bde9-e5ba-40e2-bedf-ea5a8602d926" loop autoplay muted></video>
     <div 
       class="glass_container" 
       @mousemove="handleMousemove"
@@ -15,16 +15,16 @@
           <h2>Web Developer / Programmer</h2>
         </div>
         <div class="icons">
-          <div class="icon">
+          <div class="icon" @click="redirect('insta')">
             <font-awesome-icon :icon="['fab', 'instagram']"/>
           </div>
-          <div class="icon">
+          <div class="icon" @click="redirect('linkedin')">
             <font-awesome-icon :icon="['fab', 'linkedin-in']"/>
           </div>
-          <div class="icon">
+          <div class="icon" @click="redirect('github')">
             <font-awesome-icon :icon="['fab', 'github']"/>
           </div>
-          <div class="icon">
+          <div class="icon"  @click="redirect('resume')">
             <font-awesome-icon :icon="['far', 'file-alt']"/>
           </div>
         </div>
@@ -64,6 +64,22 @@ export default {
       this.glass.style.transition = 'all 0.5s ease';
       this.glass.style.transform = `rotateY(0deg) rotateX(0deg)`
       this.text.style.transform = 'translateZ(0px)';
+    },
+    redirect(to){
+      console.log(to)
+      let link = ''
+      if(to==='insta'){
+        link = 'https://www.instagram.com/aadarsh8178/'
+      } else if(to==='github') {
+        link = 'https://github.com/Aadarsh8178'
+      } else if(to==='linkedin') {
+        link = 'https://www.linkedin.com/in/aadarsh-verma-9a927a190/'
+      } else if(to==='resume'){
+        link = 'https://drive.google.com/file/d/1UMVzHqUomaKREUGDiLQxA5q9vf5_V22k/view'
+      }
+      
+      window.open(link)
+
     }
   }
 }
@@ -80,6 +96,8 @@ export default {
   position:relative;
   overflow: hidden;
   perspective: 700px;
+  background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 .video{
  position: fixed;

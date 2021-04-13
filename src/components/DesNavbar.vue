@@ -1,5 +1,6 @@
 <template>
-  <header>
+  <header class="center-content">
+    <div class="mycontainer nav_wrapper">
     <p class="logo"> 
         <img src="../assets/logo.png" alt="">
     </p>
@@ -11,6 +12,8 @@
       </ul>
     </nav>
     <a href="#" class="cta"><button>Contact</button></a>
+    </div>
+    
   </header>
 </template>
 
@@ -27,10 +30,12 @@ header{
   width:100vw;
   top:0;
   left:0;
+  padding:20px 10%;
+}
+.nav_wrapper {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding:20px 10%;
 }
 li,a,button{
   font-weight: 500;
