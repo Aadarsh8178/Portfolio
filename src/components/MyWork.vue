@@ -1,5 +1,5 @@
 <template>
-  <div class="work_wrapper peach center-content">
+  <div class="work_wrapper peach center-content" id="mywork">
     <div class="mycontainer">
       <h1 class="text-center">FreeLance Work</h1>
       <br>

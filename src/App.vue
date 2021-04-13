@@ -40,6 +40,7 @@ export default {
   margin:0;
   padding:0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 #app{
   position: relative;
@@ -52,6 +53,7 @@ export default {
 }
 body {
   overflow: overlay;
+  
 }
 li,ul,p,h1,h2,h3,h4{
   margin:0;

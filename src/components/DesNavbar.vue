@@ -6,8 +6,8 @@
     </p>
     <nav>
       <ul class="nav_links">
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Competitive</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#mywork">Work</a></li>
         <li><a href="#">Projects</a></li>
       </ul>
     </nav>

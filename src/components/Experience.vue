@@ -1,5 +1,5 @@
 <template>
-  <div class="exp_wrapper">
+  <div class="exp_wrapper" id="experience">
     <h1 class="mycontainer" style="margin:auto">Experience</h1>
     <div
       class="exp_card0"
@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import { TimelineMax, gsap, Back } from "gsap";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { TimelineMax, gsap, Back,CSSRulePlugin } from "gsap/all";
+// import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 
 gsap.registerPlugin(CSSRulePlugin);
 
